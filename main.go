@@ -59,6 +59,8 @@ func main() {
 	ticker := time.Tick(time.Second)
 	log.SetFlags(0)
 
+	fmt.Print("\033[?25l")
+
 	for {
 		<-ticker
 
